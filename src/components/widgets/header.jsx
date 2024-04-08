@@ -20,18 +20,18 @@ const Header = () => {
                             <li className="nav-item">
                                 <HeaderTextFeild />
                             </li>
-                            <li className="nav-item dropdown" style={{paddingLeft: "210px"}}>
-                                <a className="nav-link dropdown-toggle mt-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{fontSize: "18px", color: "#333333", lineHeight: "21.6px"}}>
-                                    English (united States)
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">English (united States)</a></li>
-                                    <li><a className="dropdown-item" href="#">French (French)</a></li>
-                                </ul>
-
-                            </li>
                         </ul>
                     <div className="d-flex" role="search">
+                        <div className="dropdown" style={{paddingRight: "60px"}}>
+                            <a className="nav-link dropdown-toggle mt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{fontSize: "18px", color: "#333333", lineHeight: "21.6px"}}>
+                                English (united States)
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="#">English (united States)</a></li>
+                                <li><a className="dropdown-item" href="#">French (French)</a></li>
+                            </ul>
+
+                        </div>
                         <div><PrimaryBtn children="Login" /> </div>      
                         <div style={{paddingLeft: "29px"}}><SecondaryBtn children="Sign Up" /></div>
                     </div>

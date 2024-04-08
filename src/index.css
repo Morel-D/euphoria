@@ -30,9 +30,22 @@ body {
 #navBar
 {
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px 0px 1px 0px;
   border-color: #BEBCBD;
   padding: 34px 100px 31px 100px;
+}
+
+.auth-img
+{
+  object-fit: cover;
+}
+
+#signInImg{
+  background-image: url("../src//assets/SIImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 500%;
 }
 
 .authTextFeilds
