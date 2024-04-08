@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face
+{
+  font-family: 'Causten_400';
+  src: url('../src//fonts/Causten/Causten\ Medium.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face
+{
+  font-family: 'Causten_500';
+  src: url('../src//fonts/Causten/Causten\ Semi\ Bold.ttf');
+}
+
+@font-face
+{
+  font-family: 'Core_Sans_C';
+  src: url('../src//fonts/CoreSansC/CoreSansC-65Bold.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Causten_500';
+  line-height: 19.2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #807D7E;
+}
+
+
+.authTextFeilds
+{
+  width: 567px;
+  height: 53px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #3C4242;
+  padding-left: 20px;
+  color: #8A33FD;
+}
+
+.authTextFeilds:focus
+{
+  outline: none;
+  box-shadow: 0 0 0 1px #8A33FD;
+  width: 567px;
+  height: 53px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #8A33FD;
+  background-color: #6620C108;
+  padding-left: 20px;
+  color: #8A33FD;
+}
+
+.SocialMediaBtn
+{
+  width: 567px;
+  height: 58px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 22px;
+  border-color: #3C4242;
+  padding-left: 20px;
+  color: #8A33FD;
+  font-family: 'Causten_400';
+  padding: 16px, 20px, 16px, 20px;
+}
+
+.SocialMediaBtn:hover
+{
+  width: 567px;
+  height: 58px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 22px;
+  border-color: #8A33FD;
+  padding-left: 20px;
+  color: #8A33FD;
+  font-family: 'Causten_400';
+  padding: 16px, 20px, 16px, 20px;
+
+}
+
+.headerTextFeilds
+{
+  width: 184px;
+  height: 46px;
+  background-color: #F6F6F6;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: transparent;
+  padding-left: 20px;
+  color: #807D7E;
+}
+
+
+.primaryBtn
+{
+  width: 167px;
+  height: 54px;
+  border-radius: 8px;
+  padding: 16px 20px 20px 16px;
+  background-color: #8A33FD;
+  border-style: none;
+  color: white;
+  line-height: 21.6px;
+  font-size: 18px;
+  font-family: 'Causten_400';
+}
+
+.primaryBtn:hover
+{
+  width: 167px;
+  height: 54px;
+  border-radius: 8px;
+  padding: 16px 20px 20px 16px;
+  background-color: #a25bff;
+  border-style: none;
+  color: white;
+  line-height: 21.6px;
+  font-size: 18px;
+  font-family: 'Causten_400';
+}
+
+.SecondaryBtn
+{
+  width: 167px;
+  height: 54px;
+  border-radius: 8px;
+  padding: 16px 20px 20px 16px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #3C4242;
+  color: #8A33FD;
+  line-height: 21.6px;
+  font-size: 18px;
+  font-family: 'Causten_400';
+}
+
+.SecondaryBtn:hover
+{
+  width: 167px;
+  height: 54px;
+  border-radius: 8px;
+  padding: 16px 20px 20px 16px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #8A33FD;
+  color: #8A33FD;
+  line-height: 21.6px;
+  font-size: 18px;
+  font-family: 'Causten_400';
+}
+
+.title 
+{
+  font-family: 'Core_Sans_C';
+  font-size: 36px;
+  color: #333333;
+}
+
+.label
+{
+  font-family: 'Causten_400';
+  font-size: 18px;
+  color: #3C4242;
+  padding-bottom: 10px;
+  line-height: 21.6px;
+  
 }

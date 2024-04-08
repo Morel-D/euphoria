@@ -1,6 +1,10 @@
+import Home from "./components/views/home";
+
 function App() {
   return (
-    <div>This is the header</div>
+    <div>
+      <Home />
+    </div>
   );
 }
 
