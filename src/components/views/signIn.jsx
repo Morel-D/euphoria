@@ -1,6 +1,11 @@
 const SigIn = () => {
     return ( 
-        <div>This is the signIN compnents</div>
+        <section>
+            <div className="d-flex">
+                <div className="col">1</div>
+                <div className="col">2</div>
+            </div>
+        </section>
      );
 }
  

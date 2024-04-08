@@ -24,8 +24,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   color: #807D7E;
+  background-color: white;
 }
 
+#navBar
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BEBCBD;
+  padding: 34px 100px 31px 100px;
+}
 
 .authTextFeilds
 {
