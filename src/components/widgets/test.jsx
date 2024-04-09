@@ -12,15 +12,13 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg" id="navBar">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><img src={logo} style={{height: "45px", width: "91.6px"}}/></a>
-                    <div className="col-lg-1 col-8 text-end">
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
                     <div id="navbarLarge">
-                        <div className="collapse navbar-collapse" id="navbarScroll">
-                            <div className="searchbar"  style={{paddingRight: "210px"}}>
+                        <div className="collapse navbar-collapse">
+                            <div className="searchbar"  style={{paddingRight: "163px"}}>
                                 <HeaderTextFeild />
                             </div>
                             <div className="d-flex" role="search">
@@ -39,6 +37,7 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+                    
             </div>
         </nav>
      );
