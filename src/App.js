@@ -7,6 +7,7 @@ import RestePassword from "./components/views/resetPassword";
 import CheckEmail from "./components/views/checkEmail";
 import Verification from "./components/views/verification";
 import CreatePassword from "./components/views/createPassword";
+import Footer from "./components/widgets/footer";
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
            </Routes>
          </div>
       </div>
-      <div className="footer"></div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
     </BrowserRouter>
   );

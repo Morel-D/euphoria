@@ -218,6 +218,33 @@ input[type="checkbox"] {
   color: #333333;
 }
 
+.footerTitle 
+{
+  margin: 0px;
+  font-family: 'Causten_500';
+  size: 28.58px;
+  line-height: 61.99px;
+  color: #F6F6F6;
+}
+
+.footerLabels
+{
+  text-decoration: none;
+  font-family: 'Causten_400';
+  size: 18px;
+  line-height: 39.04px;
+  color: #F6F6F6;
+}
+
+.footerLabels:hover
+{
+  text-decoration: none;
+  font-family: 'Causten_400';
+  size: 18px;
+  line-height: 39.04px;
+  color: #BEBCBD;
+}
+
 .label
 {
   font-family: 'Causten_400';
@@ -229,7 +256,41 @@ input[type="checkbox"] {
 }
 
 
+.footerComponents{
+  background-color: #3C4242;
+  padding: 59px 110px 59px 110px;
+}
 
+.links, .medias, .subCat
+{
+  padding-left: 76px;
+  /* padding-left: 0px 85px 0px 76px; */
+  /* background-color: #8A33FD; */
+}
+
+.medias
+{
+  padding-top: 77px;
+}
+
+.btn-white
+{
+  background-color: #F6F6F6;
+  border-radius: 10.68px;
+  width: 37.02px;
+  height: 37.02px;
+}
+
+.btn-white >img
+{
+  padding-bottom: 2px;
+}
+
+#insta > img, #twit > img
+{
+  position: relative;
+  right: 2px;
+}
 
 @media (max-width: 767px)
 {
