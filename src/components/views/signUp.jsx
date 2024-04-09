@@ -50,9 +50,9 @@ const SignUp = () => {
                                     <div className="col"><p style={{fontSize: "18px"}}>Subscribe to our monthly newsletter</p></div>
                                 </div>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-4" style={{paddingBottom: "82%"}}>
                                 <PrimaryBtn children="Sign Up" />
-                                <p className="notice mt-2">Already have an  account? <a href="/sign-in" style={{color: "#3C4242"}}>Log in</a></p>
+                                <p className="notice mt-2">Already have an  account? <a href="/sign-in" style={{color: "#3C4242"}}>Sign In</a></p>
                             </div>
                         </div>
                     </div>

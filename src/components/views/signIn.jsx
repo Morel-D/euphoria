@@ -46,7 +46,7 @@ const SigIn = () => {
                             <AuthTextFeilds label={passwordLable} type="password"/>
                             <p className="notice mt-2 text-end"><a href="" style={{color: "#3C4242"}}>Forget your password</a></p>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-4" style={{paddingBottom: "82%"}}>
                             <PrimaryBtn children="Sign In" />
                             <p className="notice mt-2">Don’t have an account? <a href="/sign-up" style={{color: "#3C4242"}}>Sign up</a></p>
                             </div>

@@ -3,6 +3,10 @@ import SigIn from "./components/views/signIn";
 import Home from "./components/views/home";
 import Header from "./components/widgets/header";
 import SignUp from "./components/views/signUp";
+import RestePassword from "./components/views/resetPassword";
+import CheckEmail from "./components/views/checkEmail";
+import Verification from "./components/views/verification";
+import CreatePassword from "./components/views/createPassword";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
            <Routes>
               <Route path="/sign-in" element ={<SigIn />} />
               <Route path="/sign-up" element ={<SignUp />} />
+              <Route path="/reset-password" element ={<RestePassword />} />
+              <Route path="/check-email" element ={<CheckEmail />} />
+              <Route path="/verification" element ={<Verification />} />
+              <Route path="/create-password" element ={<CreatePassword />} />
            </Routes>
          </div>
       </div>

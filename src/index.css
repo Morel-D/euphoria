@@ -12,6 +12,12 @@
 
 @font-face
 {
+  font-family: 'Causten_700';
+  src: url('../src//fonts/Causten/Causten\ Extra\ Bold.ttf');
+}
+
+@font-face
+{
   font-family: 'Core_Sans_C';
   src: url('../src//fonts/CoreSansC/CoreSansC-65Bold.ttf');
 }
@@ -37,12 +43,20 @@ body {
   padding: 34px 100px 31px 100px; 
 }
 
-.bg-image { background-repeat: no-repeat }
+.bg-image { background-repeat: no-repeat; }
 
 .txt-danger{
   font-family: "Causten_400";
   size: 16px;
   color: #EE1D52;
+  line-height: 19.2px;
+}
+
+.txt-primary{
+  text-decoration: none;
+  font-family: "Causten_700";
+  size: 16px;
+  color: #8A33FD;
   line-height: 19.2px;
 }
 
