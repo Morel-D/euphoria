@@ -1,10 +1,33 @@
-import { colors } from "../tools/colors";
+import { HighLine } from "../widgets/text";
+import { homeBanner } from "../widgets/homeWidgets";
+import { WhiteBtn } from "../widgets/buttons";
+import leftArrow from "../../assets/logo/LA.png";
+import rightArrow from "../../assets/logo/RA.png";
+import carousel from "../../assets/logo/carrousel.png";
+
 
 const Home = () => {
     return ( 
-        <div className="container mt-5">
-            <p style={{color: colors.primary }}>This is the home page=</p>
-        </div>
+        
+        <section className="container-fluid home-section">
+
+            <div className="row" style={{backgroundImage: `url(${homeBanner.bgImage})`, paddingTop: "129px", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+                    <div className="col col-1 d-flex align-items-center"><a href="#"><img src={leftArrow} className="img-fluid" /></a></div>
+                    <div className="col">
+                    <p className="txt-white">{homeBanner.firstPath}</p>
+                <h1 className="intro-title py-4">{homeBanner.title}</h1>
+                <p className="txt-white mb-5">{homeBanner.secondPath}</p>
+                <WhiteBtn children={homeBanner.btnTitle} />
+                    </div>
+                    <div className="col"></div>
+                    <div className="col d-flex align-items-center justify-content-end"><a href="#"><img src={rightArrow} className="img-fluid" /></a></div>
+
+                    <div className="text-center" style={{paddingTop: "73px", paddingBottom: "60px"}}><a href=""> <img src={carousel} className="img-fluid" /></a></div>
+            </div>         
+            <section className="body">
+
+            </section>
+        </section>
 
      );
 }

@@ -22,6 +22,19 @@
   src: url('../src//fonts/CoreSansC/CoreSansC-65Bold.ttf');
 }
 
+@font-face
+{
+  font-family: 'Core_Sans_C_800';
+  src: url('../src//fonts/CoreSansC/Fontspring-DEMO-coresansc95.otf');
+}
+
+@font-face
+{
+  font-family: 'Core_Sans_C_500';
+  src: url('../src//fonts/CoreSansC/Fontspring-DEMO-coresansc55.otf');
+}
+
+
 body {
   margin: 0px;
   font-family: 'Causten_500';
@@ -33,7 +46,31 @@ body {
   background-color: white;
 }
 
+/* .home-section
+{
+  padding: 0px;
+} */
+
 .notice { font-family: 'Causten_400'; color: #3C4242; line-height: 19.2px; font-size: 16px; }
+
+.highline
+{
+  position: relative;
+  bottom: 4px;
+  font-family: 'Core_Sans_C';
+  font-size: 34px;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+
+
+.indicate 
+{
+  background-color: #8A33FD;
+  padding-left: 6px;
+  border-radius: 20px;
+  padding-bottom: 6px;
+}
 
 #navBar 
 { 
@@ -58,6 +95,24 @@ body {
   size: 16px;
   color: #8A33FD;
   line-height: 19.2px;
+}
+
+.intro-title
+{
+  font-family: 'Core_Sans_C_800';
+  font-size: 78px;
+  line-height: 100.62px;
+  letter-spacing: 0.31px;
+  color: white;
+}
+
+.txt-white
+{
+  font-family: 'Core_Sans_C_500';
+  font-size: 32px;
+  line-height: 37.77px;
+  letter-spacing: 0.16px;
+  color: white;
 }
 
 .authTextFeilds
@@ -197,6 +252,34 @@ body {
   line-height: 21.6px;
   font-size: 18px;
   font-family: 'Causten_400';
+}
+
+
+.whiteBtn
+{
+  font-family: 'Causten_400';
+  font-size: 24px;
+  color: #3C4242;
+  background-color: white;
+  width: 250px;
+  height: 65px;
+  padding: 16px 70px 16px 70px;
+  gap: 12px;
+}
+
+.whiteBtn:hover
+{
+  font-family: 'Causten_400';
+  font-size: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  /* background-color: white; */
+  width: 250px;
+  height: 65px;
+  padding: 16px 70px 16px 70px;
+  gap: 12px;
 }
 
 .checkBoxTextFeild

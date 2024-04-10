@@ -16,4 +16,10 @@ const SocialMediaBtn = ({children, img}) =>
     
 }
 
-export {PrimaryBtn, SecondaryBtn, SocialMediaBtn}
+const WhiteBtn = ({children}) =>
+{
+    return <button className="btn whiteBtn">{children}</button>
+    
+}
+
+export {PrimaryBtn, SecondaryBtn, SocialMediaBtn, WhiteBtn}
