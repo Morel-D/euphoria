@@ -22,6 +22,12 @@ import FM6 from "../../assets/home/FM6.png";
 import FM7 from "../../assets/home/FM7.png";
 import FM8 from "../../assets/home/FM8.png";
 
+import FW1 from "../../assets/home/FW1.png";
+import FW2 from "../../assets/home/FW2.png";
+import FW3 from "../../assets/home/FW3.png";
+import FW4 from "../../assets/home/FW4.png";
+
+
 
 
 
@@ -207,4 +213,38 @@ const fifthSection =
     },
 ]
 
-export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection}
+const sixthSection = 
+[
+    
+
+    {
+        id: 1,
+        bgImage: FW1,
+        title: "Hoodies & Sweetshirt",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 2,
+        bgImage: FW2,
+        title: "Coats & Parkas",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 3,
+        bgImage: FW3,
+        title: "Tees & T-Shirt",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 4,
+        bgImage: FW4,
+        title: "Boxers",
+        link: "Explore Now!",
+    },
+
+]
+
+export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection}

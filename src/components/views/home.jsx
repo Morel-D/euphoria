@@ -1,6 +1,6 @@
 import { HighLine } from "../widgets/text";
 import { colors } from "../tools/colors";
-import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection} from "../widgets/homeWidgets";
+import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection} from "../widgets/homeWidgets";
 import { OutLineBlackBtn, OutLineWhiteBtn, SpecialBlackBtn, WhiteBtn } from "../widgets/buttons";
 import leftArrow from "../../assets/logo/LA.png";
 import rightArrow from "../../assets/logo/RA.png";
@@ -17,6 +17,13 @@ import rightGreyLinkArrow from "../../assets/logo/rightGreyArrow.png";
 
 import SIM1 from "../../assets/home/Sl1.png"
 import SIM2 from "../../assets/home/Sl2.png"
+
+import B1 from "../../assets/home/B1.png"
+import B2 from "../../assets/home/B2.png"
+import B3 from "../../assets/home/B3.png"
+import B4 from "../../assets/home/B4.png"
+import B5 from "../../assets/home/B5.png"
+
 
 
 
@@ -161,7 +168,7 @@ const Home = () => {
                     <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
                         {
                             fifthSection.map((fifth) => (
-                                <div className="col mt-5" key={fifth.id}>
+                                <div className="col" key={fifth.id}>
                                     <img src={fifth.bgImage} className="img-fluid" />
                                     <div className="row mt-4">
                                         <div className="col col-7">
@@ -175,7 +182,45 @@ const Home = () => {
                             ))
                         }
                     </div>
+                </section>
 
+
+                <section className="sixth-section" style={{paddingTop: "100px"}}>
+                    <HighLine children="Categories For Women" />
+
+                    <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
+                        {
+                            sixthSection.map((sixth) => (
+                                <div className="col" key={sixth.id}>
+                                    <img src={sixth.bgImage} className="img-fluid" />
+                                    <div className="row mt-4">
+                                        <div className="col col-7">
+                                            <p className="card-labels-black" style={{lineHeight: "2px"}}>{sixth.title}</p>
+                                            <label className="card-labels-black" style={{lineHeight: "2px"}}><a href="#" className="" style={{textDecoration: "none", color: `${colors.grey}`}}>{sixth.link}</a></label>
+
+                                        </div>
+                                        <div className="mx-5 col text-end"><a href="#"><img src={rightGreyLinkArrow} className="img-fluid" /></a></div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </section>
+
+                <section className="seven-section"  style={{paddingTop: "100px"}}>
+                    <div className="container text-center" style={{backgroundColor: `${colors.black}`, borderRadius: "12px" }}>
+                        <h4 className="intro-title" style={{fontSize: "50px", lineHeight: "49.1px", paddingTop: "43.84px"}}>Top Brands Deal</h4>
+                        <p className="card-labels" style={{paddingTop: "25.86px", fontSize: "22px"}}>Up To <b style={{color: "#FBD103"}}>60%</b> off on brands</p>
+                        <div className="row mx-5 px-5" style={{paddingTop: "67px", paddingBottom: "59.89px"}}>
+                            <div className="col">
+                                <div className="cards bg-white rounded"><img src={B1} className="img-fluid" /></div>
+                            </div>
+                            <div className="col"> <div className="cards bg-white rounded"><img src={B2} className="img-fluid" /></div></div>
+                            <div className="col"> <div className="cards bg-white rounded"><img src={B3} className="img-fluid" /></div></div>
+                            <div className="col"> <div className="cards bg-white rounded"><img src={B4} className="img-fluid" /></div></div>
+                            <div className="col"> <div className="cards bg-white rounded"><img src={B5} className="img-fluid" /></div></div>
+                        </div>
+                    </div>
                 </section>
 
             </section>
