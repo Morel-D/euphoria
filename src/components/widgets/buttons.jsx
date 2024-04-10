@@ -22,4 +22,24 @@ const WhiteBtn = ({children}) =>
     
 }
 
-export {PrimaryBtn, SecondaryBtn, SocialMediaBtn, WhiteBtn}
+const OutLineWhiteBtn = ({children}) =>
+{
+    return <button className="btn outLineWhiteBtn">{children}</button>
+
+}
+
+const OutLineBlackBtn = ({children, style}) =>
+{
+    return <button className="btn outLineBlackBtn" style={style}>{children}</button>
+
+}
+
+
+const SpecialBlackBtn = ({children}) =>
+{
+    return <button className="btn specialBlackBtn">{children}</button>
+
+}
+
+
+export {PrimaryBtn, SecondaryBtn, SocialMediaBtn, WhiteBtn, OutLineBlackBtn, OutLineWhiteBtn, SpecialBlackBtn}

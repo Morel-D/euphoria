@@ -284,6 +284,52 @@ body {
   gap: 12px;
 }
 
+
+.outLineWhiteBtn
+{
+  width: 111px;
+  height: 34px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+  font-family: 'Causten_400';
+}
+
+.outLineBlackBtn
+{
+  width: 111px;
+  height: 34px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3C4242;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #3C4242;
+  font-size: 12px;
+  font-family: 'Causten_400';
+}
+
+
+.specialBlackBtn
+{
+  width: 104px;
+  height: 34px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3C4242;
+  border-radius: 4px;
+  background-color: #3C4242;
+  color: white;
+  font-size: 12px;
+  font-family: 'Causten_500';
+}
+
+
+
 .checkBoxTextFeild
 {
   height: 18px;
@@ -398,12 +444,54 @@ input[type="checkbox"] {
   color: white;
 }
 
+.card-title-thin-white
+{
+  font-family: 'Core_Sans_C';
+  font-size: 28px;
+  line-height: 38.48px;
+  letter-spacing: 2%;
+  color: white;
+}
+
+.card-title-thin-black
+{
+  font-family: 'Core_Sans_C';
+  font-size: 28px;
+  line-height: 38.48px;
+  letter-spacing: 2%;
+  color: #3C4242;
+}
+
 .card-labels
 {
   font-family: 'Core_Sans_C_500';
   font-size: 16px;
   line-height: 25.06px;
   color: white;
+}
+
+.card-labels-black
+{
+  font-family: 'Core_Sans_C_500';
+  font-size: 16px;
+  line-height: 25.06px;
+  color: #3C4242;
+}
+
+.cards-small-desc
+{
+  font-family: 'Core_Sans_C';
+  font-size: 14px;
+  line-height: 16.8px;
+  color: white;
+}
+
+.cards-small-desc-black
+{
+  font-family: 'Core_Sans_C';
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #3C4242;
 }
 
 .card-links
