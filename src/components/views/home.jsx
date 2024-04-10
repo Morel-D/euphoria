@@ -1,5 +1,5 @@
 import { HighLine } from "../widgets/text";
-import { homeBanner } from "../widgets/homeWidgets";
+import { homeBanner, firstSection } from "../widgets/homeWidgets";
 import { WhiteBtn } from "../widgets/buttons";
 import leftArrow from "../../assets/logo/LA.png";
 import rightArrow from "../../assets/logo/RA.png";
@@ -24,8 +24,28 @@ const Home = () => {
 
                     <div className="text-center" style={{paddingTop: "73px", paddingBottom: "60px"}}><a href=""> <img src={carousel} className="img-fluid" /></a></div>
             </div>         
-            <section className="body">
+            <section className="container py-5 body">
+                <section className="first-section" style={{paddingTop: "100px"}}>
+                    <div className="row">
+                        {firstSection.map((first) => (
+                         <div className="col py-2" key={first.id}>
+                            <div className="cards py-5" style={{backgroundImage: `url(${first.bgImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundSize: `${first.bgSize}`, position: "relative", bottom: `${first.bottom}`, height: "355.84px", width: "604.93px", paddingLeft: "30px" }}>
+                                <div className="row">
+                                    <div className="col col-6">
+                                    <p className="card-small-title mt-3">{first.smallTitle}</p>
+                                    <h5 className="card-title">{first.title}</h5>
+                                    <p className="card-labels mb-5">{first.label}</p>
+                                    <a className="card-links" href="">{first.link}</a>
+                                    </div>
+                                    <div className="col"></div>
+                                </div>
+                            </div>
+                         </div>   
+                        ))
 
+                        }
+                    </div>
+                </section>
             </section>
         </section>
 

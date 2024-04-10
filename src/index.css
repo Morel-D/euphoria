@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+
 @font-face
 {
   font-family: 'Causten_400';
@@ -25,13 +27,13 @@
 @font-face
 {
   font-family: 'Core_Sans_C_800';
-  src: url('../src//fonts/CoreSansC/Fontspring-DEMO-coresansc95.otf');
+  src: url('../src//fonts/CoreSansC/CoreSansC-95Black.ttf');
 }
 
 @font-face
 {
   font-family: 'Core_Sans_C_500';
-  src: url('../src//fonts/CoreSansC/Fontspring-DEMO-coresansc55.otf');
+  src: url('../src//fonts/CoreSansC/CoreSansC-45Regular.ttf');
 }
 
 
@@ -374,6 +376,44 @@ input[type="checkbox"] {
   position: relative;
   right: 2px;
 }
+
+
+
+/* ... */
+.card-small-title
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800px;
+  font-size: 18px;
+  line-height: 30.07px;
+  letter-spacing: 0.25px;
+  color: white
+}
+
+.card-title
+{
+  font-family: 'Core_Sans_C_800';
+  font-size: 30px;
+  line-height: 45.1px;
+  color: white;
+}
+
+.card-labels
+{
+  font-family: 'Core_Sans_C_500';
+  font-size: 16px;
+  line-height: 25.06px;
+  color: white;
+}
+
+.card-links
+{
+  font-family: 'Core_Sans_C_800';
+  font-size: 20px;
+  line-height: 30.13px;
+  color: white;
+}
+
 
 @media (max-width: 767px)
 {
