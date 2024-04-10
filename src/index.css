@@ -2,6 +2,12 @@
 
 @font-face
 {
+  font-family: 'Causten_300';
+  src: url('../src//fonts/Causten/Causten\ Thin.ttf');
+}
+
+@font-face
+{
   font-family: 'Causten_400';
   src: url('../src//fonts/Causten/Causten\ Medium.ttf');
 }
@@ -114,6 +120,15 @@ body {
   font-size: 32px;
   line-height: 37.77px;
   letter-spacing: 0.16px;
+  color: white;
+}
+
+.thin-decs-white
+{
+  font-family: 'Causten_300';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
   color: white;
 }
 

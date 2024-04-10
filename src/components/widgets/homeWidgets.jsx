@@ -13,6 +13,17 @@ import SZ3 from "../../assets/home/SZ3.png";
 import SZ4 from "../../assets/home/SZ4.png";
 import SZ5 from "../../assets/home/SZ5.png";
 
+import FM1 from "../../assets/home/FM1.png";
+import FM2 from "../../assets/home/FM2.png";
+import FM3 from "../../assets/home/FM3.png";
+import FM4 from "../../assets/home/FM4.png";
+import FM5 from "../../assets/home/FM5.png";
+import FM6 from "../../assets/home/FM6.png";
+import FM7 from "../../assets/home/FM7.png";
+import FM8 from "../../assets/home/FM8.png";
+
+
+
 
 
 // Banner Page .........................
@@ -136,4 +147,64 @@ const thirdSectionSecondPart =
 
 ]
 
-export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart}
+
+const fifthSection = 
+[
+    {
+        id: 1,
+        bgImage: FM1,
+        title: "Shirts",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 2,
+        bgImage: FM2,
+        title: "Printed T-Shirts",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 3,
+        bgImage: FM3,
+        title: "Plain T-Shirt",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 4,
+        bgImage: FM4,
+        title: "Polo T-Shirt",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 5,
+        bgImage: FM5,
+        title: "Hoodies & Sweetshirt",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 6,
+        bgImage: FM6,
+        title: "Jeans",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 7,
+        bgImage: FM7,
+        title: "Activewear",
+        link: "Explore Now!",
+    },
+
+    {
+        id: 8,
+        bgImage: FM8,
+        title: "Boxers",
+        link: "Explore Now!",
+    },
+]
+
+export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection}

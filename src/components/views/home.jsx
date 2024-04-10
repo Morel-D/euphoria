@@ -1,6 +1,6 @@
 import { HighLine } from "../widgets/text";
 import { colors } from "../tools/colors";
-import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart} from "../widgets/homeWidgets";
+import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection} from "../widgets/homeWidgets";
 import { OutLineBlackBtn, OutLineWhiteBtn, SpecialBlackBtn, WhiteBtn } from "../widgets/buttons";
 import leftArrow from "../../assets/logo/LA.png";
 import rightArrow from "../../assets/logo/RA.png";
@@ -11,7 +11,13 @@ import rightGreyArrow from "../../assets/logo/right.png";
 
 import downGreyArrow from "../../assets/logo/downBlackArrow.png";
 import downWhiteArrow from "../../assets/logo/downWhiteArrow.png";
-import { Fragment } from "react";
+
+import rightGreyLinkArrow from "../../assets/logo/rightGreyArrow.png";
+
+
+import SIM1 from "../../assets/home/Sl1.png"
+import SIM2 from "../../assets/home/Sl2.png"
+
 
 
 const Home = () => {
@@ -127,6 +133,46 @@ const Home = () => {
                                 </div>
                             </div>
                         ))
+                        }
+                    </div>
+
+                </section>
+
+
+                <section className="foruth-section"  style={{paddingTop: "100px"}}>
+                    <div className="row">
+                        <div className="col"  style={{backgroundImage: `url(${SIM1})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh", width:"614px", padding: "150px 40px 174px 40px"}}>
+                            <div className="mx-4">
+                                <h6 className="intro-title" style={{fontSize: "34px", lineHeight: "50px"}}>WE MADE YOUR EVERYDAY FASHION BETTER!</h6>
+                                <p className="thin-decs-white py-4 mx-2">In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                                <div className="">
+                                    <WhiteBtn children="Shop Now" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col" style={{backgroundImage: `url(${SIM2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh", borderRadius: "0px 20px 20px 0px"}}></div>
+                    </div>
+                </section>
+
+
+                <section className="fifth-section" style={{paddingTop: "100px"}}>
+                    <HighLine children="Categories For Men" />
+
+                    <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
+                        {
+                            fifthSection.map((fifth) => (
+                                <div className="col mt-5" key={fifth.id}>
+                                    <img src={fifth.bgImage} className="img-fluid" />
+                                    <div className="row mt-4">
+                                        <div className="col col-7">
+                                            <p className="card-labels-black" style={{lineHeight: "2px"}}>{fifth.title}</p>
+                                            <label className="card-labels-black" style={{lineHeight: "2px"}}><a href="#" className="" style={{textDecoration: "none", color: `${colors.grey}`}}>{fifth.link}</a></label>
+
+                                        </div>
+                                        <div className="mx-5 col text-end"><a href="#"><img src={rightGreyLinkArrow} className="img-fluid" /></a></div>
+                                    </div>
+                                </div>
+                            ))
                         }
                     </div>
 
