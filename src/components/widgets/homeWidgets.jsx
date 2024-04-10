@@ -27,7 +27,18 @@ import FW2 from "../../assets/home/FW2.png";
 import FW3 from "../../assets/home/FW3.png";
 import FW4 from "../../assets/home/FW4.png";
 
+import LL1 from "../../assets/home/LL1.png";
+import LL2 from "../../assets/home/LL2.png";
+import LL3 from "../../assets/home/LL3.png";
+import LL4 from "../../assets/home/LL4.png";
 
+import FB1 from "../../assets/home/FB1.png"
+import FB2 from "../../assets/home/FB2.png"
+import FB3 from "../../assets/home/FB3.png"
+
+import ST1 from "../../assets/logo/star1.png";
+import ST2 from "../../assets/logo/start2.png";
+import ST3 from "../../assets/logo/Star3.png";
 
 
 
@@ -247,4 +258,70 @@ const sixthSection =
 
 ]
 
-export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection}
+const eighthSection = 
+[
+    {
+        id: 1,
+        bgImage: LL1,
+        title: "Black Sweatshirt with ....",
+        brand: "Jhanvi’s  Brand",
+        price: "$123.00"
+    },
+
+    {
+        id: 2,
+        bgImage: LL2,
+        title: "line Pattern Black H...",
+        brand: "AS’s  Brand",
+        price: "$37.00"
+    },
+
+    {
+        id: 3,
+        bgImage: LL3,
+        title: "Black Shorts",
+        brand: "MM’s  Brand",
+        price: "$37.00"
+    },
+
+    {
+        id: 4,
+        bgImage: LL4,
+        title: "Levender Hoodie with ....",
+        brand: "Nike’s  Brand",
+        price: "$119.00"
+    },
+]
+
+
+const nineSection = 
+[
+    {
+        id: 1,
+        profile: FB1,
+        starts: {ST3, ST3, ST3, ST2, ST1 },
+        name: "Floyd Miles",
+        content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
+        content2: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."    
+    },
+
+    {
+        id: 2,
+        profile: FB2,
+        starts: {ST3, ST3, ST3, ST3, ST1 },
+        name: "Ronald Richards",
+        content: "ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        content2: ""    
+    },
+
+    {
+        id: 3,
+        profile: FB3,
+        starts: {ST3, ST3, ST3, ST2, ST1 },
+        name: "Savannah Nguyen",
+        content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
+        content2: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."    
+    },
+]
+
+export {homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection, eighthSection, nineSection}

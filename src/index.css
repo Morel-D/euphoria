@@ -9,6 +9,12 @@
 @font-face
 {
   font-family: 'Causten_400';
+  src: url('../src//fonts/Causten/Causten\ Regular.ttf');
+}
+
+@font-face
+{
+  font-family: 'Causten_400';
   src: url('../src//fonts/Causten/Causten\ Medium.ttf');
 }
 
@@ -58,6 +64,12 @@ body {
 {
   padding: 0px;
 } */
+
+.small-txt
+{
+  font-family: 'Causten_400';
+  font-size: '14px';
+}
 
 .notice { font-family: 'Causten_400'; color: #3C4242; line-height: 19.2px; font-size: 16px; }
 

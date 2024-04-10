@@ -1,6 +1,6 @@
 import { HighLine } from "../widgets/text";
 import { colors } from "../tools/colors";
-import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection} from "../widgets/homeWidgets";
+import { homeBanner, firstSection, secondSection, thirdSectionFirstPart, thirdSectionSecondPart, fifthSection, sixthSection, eighthSection, nineSection} from "../widgets/homeWidgets";
 import { OutLineBlackBtn, OutLineWhiteBtn, SpecialBlackBtn, WhiteBtn } from "../widgets/buttons";
 import leftArrow from "../../assets/logo/LA.png";
 import rightArrow from "../../assets/logo/RA.png";
@@ -23,6 +23,15 @@ import B2 from "../../assets/home/B2.png"
 import B3 from "../../assets/home/B3.png"
 import B4 from "../../assets/home/B4.png"
 import B5 from "../../assets/home/B5.png"
+
+import Heart from "../../assets/logo/heart.png";
+
+import ST1 from "../../assets/logo/star1.png";
+import ST2 from "../../assets/logo/start2.png";
+import ST3 from "../../assets/logo/Star3.png";
+
+import pag from "../../assets/logo/pagination.png";
+
 
 
 
@@ -221,6 +230,63 @@ const Home = () => {
                             <div className="col"> <div className="cards bg-white rounded"><img src={B5} className="img-fluid" /></div></div>
                         </div>
                     </div>
+                </section>
+
+                <section className="eighth-section" style={{paddingTop: "100px"}}>
+                    <HighLine children="In The Limelight" />
+                    <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
+                        {
+                            eighthSection.map((eighth) => (
+                                <div className="col" key={eighth.id}>
+                                    <div className="" style={{backgroundImage: `url(${eighth.bgImage})`, width: "282px", height: "370px"}}>
+                                        <div className="row p-4">
+                                            <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
+                                        </div>
+                                    </div>
+                                    <div className="row mt-4">
+                                        <div className="col">
+                                            <p className="card-labels-black" style={{fontSize: "16px", lineHeight: "2px"}}>{eighth.title}</p>
+                                            <label className="card-labels-black"><a href="#" className="" style={{textDecoration: "none", lineHeight:"2px", fontSize: "14px", color: `${colors.grey}`}}>{eighth.brand}</a></label>
+
+                                        </div>
+                                        <div className="col mx-2 col-4 text-center"><a href="#"  style={{color: `${colors.black}`, textDecoration: "none", backgroundColor: `${colors.light}`, borderRadius: "8px", padding: "10px", width: "82.31px", height: "36.58px"}}><b>{eighth.price}</b></a></div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </section>
+
+                <section className="nine-section"  style={{paddingTop: "100px"}}>
+                    <HighLine children="Feedback" />
+                    <div className="row " style={{paddingTop: "70px"}}>
+                        {
+                            nineSection.map((nine) => (
+                                <div className="col" key={nine.id}>
+                                    <div className="card p-4" style={{ borderWidth: "2px", width: "396px", height: "392px"}}>
+                                        <div className="row py-4">
+                                            <div className="col text-start"><a href="#"><img src={nine.profile} className="img-fluid" /></a></div>
+                                            <div className="col text-end">
+                                                <img src={ST3} className="img-fluid" />
+                                                <img src={ST3} className="img-fluid" />
+                                                <img src={ST3} className="img-fluid" />
+                                                <img src={nine.id === 2 ? ST3 : ST2} className="img-fluid" />
+                                                <img src={ST1} className="img-fluid" />
+
+                                            </div>
+                                        </div>
+                                   
+                                        <div className="content">
+                                        <p className="card-labels-black" style={{fontSize: "22px"}}><>{nine.name}</></p>
+                                        <p className="small-txt">{nine.content}</p>
+                                        <p className="small-txt">{nine.content2}</p>
+                                        </div> 
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <img src={pag} className="img-fluid mt-2" />
                 </section>
 
             </section>
