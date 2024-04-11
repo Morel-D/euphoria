@@ -1,53 +1,163 @@
 import { colors } from "../tools/colors";
-import { sectionOne, sectionThree } from "../widgets/productListWidget";
+import { sectionOne, sectionThree, sectionOneFilter, sectionOneColor, sectionOneDress, sectionOneSize } from "../widgets/productListWidget";
 import Heart from "../../assets/logo/heart.png";
 import { HighLine } from "../widgets/text";
 import { Fragment } from "react";
+import filter from "../../assets/logo/filter.png"
+import greyLeftArrow from "../../assets/logo/arrowLeft.png"
+import greyUpArrow from "../../assets/logo/arrowUp.png"
+import blackUpArrow from "../../assets/logo/blackUpArrow.png"
 
 const ProductList = () => {
     return ( 
         <section className="container">
             <section className="section-one">
                 <div className="row">
-                    <div className="col col-3">1</div>
-                    <div className="col mt-5">
-                       <div className="headings">
-                            <div className="row">
-                                <div className="col">
-                                    <h6 className="title" style={{fontSize: "22px"}}>Women’s Clothing</h6>
+                    <div className="col col-3">
+                        <ul class="list-group list-group-flush" style={{borderStyle: "solid", borderWidth: "0px 1px 1px 1px", borderColor: "#BEBCBD"}}>
+                            <li class="list-group-item mt-4">
+                                <div className="row">
+                                    <div className="col"><p className="small-txt" style={{fontSize: "22px"}}><>Filter</></p></div>
+                                    <div className="col text-end"><a href="#"><img src={filter} className="img-fluid" /></a></div>
                                 </div>
-                                <div className="col col-5">
-                                    <div className="row mx-5">
-                                        <div className="col text-end"><a href="#"  style={{textDecoration: "none"}}><h6 className="small-title-link" style={{color: `${colors.primary}`}}>New</h6></a></div>
-                                        <div className="col"><a href="#" style={{textDecoration: "none"}}><h6 className="small-title-link">Recommended</h6></a></div>
+                            </li>
+                            <li class="list-group-item py-3">
+                                {
+                                    sectionOneFilter.map((filter) =>
+                                (
+                                    <a href="#">
+                                        <div className="row">
+                                            <div className="col col-8 py-2"><label className="label-txt">{filter}</label></div>
+                                            <div className="col py-2 text-end"><img src={greyLeftArrow} className="img-fluid" /></div>
+                                        </div>
+                                    </a>
+                                ))
+                                }
+                            </li>
+                            <li class="list-group-item mt-4">
+                                <div className="row">
+                                    <div className="col"><p className="small-txt" style={{fontSize: "22px"}}><>Price</></p></div>
+                                    <div className="col text-end"><a href="#"><img src={greyUpArrow} className="img-fluid" /></a></div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-4">
+                                
+                                <input type="range" className="form-range" id="customRange1" />
+                                <div className="row py-3">
+                                    <div className="col">
+                                        <div className="card text-center py-2">$70</div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="card text-center py-2">$600</div>
                                     </div>
                                 </div>
-                            </div>
-                       </div>
-
-                       <div className="articles">
-                            <div className="row row-cols-2 g-lg-3 row-cols-lg-3" style={{paddingTop: "70px"}}>
-                                {
-                                    sectionOne.map((one) => (
-                                        <div className="col" key={one.id}>
-                                            <div className="" style={{backgroundImage: `url(${one.bgImage})`, width: "282px", height: "370px"}}>
-                                                <div className="row p-4">
-                                                    <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
+                            </li>
+                            <li class="list-group-item mt-4">
+                                <div className="row">
+                                    <div className="col"><p className="small-txt" style={{fontSize: "22px", color: `${colors.black}`}}><>Colors</></p></div>
+                                    <div className="col text-end"><a href="#"><img src={blackUpArrow} className="img-fluid" /></a></div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div className="row row-cols-2 row-cols-lg-4 g-lg-3 py-4">
+                                    {
+                                        sectionOneColor.map((sectionColor) => (
+                                            <div className="col px-3" key={sectionColor.id}>
+                                                <a href="#">
+                                                <div className="" style={{backgroundColor: `${sectionColor.color}`, borderStyle: "none", width: "36.73px", height: "36.73px", borderRadius: "12px"}}>
                                                 </div>
+                                                </a>
+                                                <p className="small-txt mt-3 text-center">{sectionColor.name}</p>
                                             </div>
-                                            <div className="row mt-4">
-                                                <div className="col">
-                                                    <p className="card-labels-black" style={{fontSize: "15px", lineHeight: "0.01px"}}>{one.title}</p>
-                                                    <p className="card-labels-black"><a href="#" className="" style={{textDecoration: "none", lineHeight:"0.01px", fontSize: "13px", color: `${colors.grey}`}}>{one.brand}</a></p>
+                                        ))
+                                    }
+                                </div>
+                            </li>
 
-                                                </div>
-                                                <div className="col mx-2 col-4 text-start"><a href="#"  style={{color: `${colors.black}`, textDecoration: "none", backgroundColor: `${colors.light}`, borderRadius: "8px", padding: "10px", width: "82.31px", height: "36.58px"}}><b>{one.price}</b></a></div>
+                            <li class="list-group-item mt-4">
+                                <div className="row">
+                                    <div className="col"><p className="small-txt" style={{fontSize: "22px"}}><>Size</></p></div>
+                                    <div className="col text-end"><a href="#"><img src={greyUpArrow} className="img-fluid" /></a></div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <div className="row row-cols-2 row-cols-lg-3 g-lg-3 py-4">
+                                    {
+                                        sectionOneSize.map((sectionSize) => (
+                                            <div className="col px-3 text-center">
+                                                <a href="#" style={{textDecoration: "none", color: `${colors.black}`}}>
+                                                    <div className="card py-2" style={{borderRadius: "8px", borderWidth: "1px"}}>
+                                                        {sectionSize}
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </li>
+
+                            <li class="list-group-item mt-4">
+                                <div className="row">
+                                    <div className="col"><p className="small-txt" style={{fontSize: "22px"}}><>Dress Style</></p></div>
+                                    <div className="col text-end"><a href="#"><img src={greyUpArrow} className="img-fluid" /></a></div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item py-3">
+                                {
+                                    sectionOneDress.map((dress) =>
+                                (
+                                    <a href="#">
+                                        <div className="row">
+                                            <div className="col col-8 py-2"><label className="label-txt">{dress}</label></div>
+                                            <div className="col py-2 text-end"><img src={greyLeftArrow} className="img-fluid" /></div>
+                                        </div>
+                                    </a>
+                                ))
+                                }
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div className="col mt-5">
+                            <div className="headings">
+                                    <div className="row">
+                                        <div className="col">
+                                            <h6 className="title" style={{fontSize: "22px"}}>Women’s Clothing</h6>
+                                        </div>
+                                        <div className="col col-5">
+                                            <div className="row mx-5">
+                                                <div className="col text-end"><a href="#"  style={{textDecoration: "none"}}><h6 className="small-title-link" style={{color: `${colors.primary}`}}>New</h6></a></div>
+                                                <div className="col"><a href="#" style={{textDecoration: "none"}}><h6 className="small-title-link">Recommended</h6></a></div>
                                             </div>
                                         </div>
-                                    ))
-                                }
+                                    </div>
                             </div>
-                       </div>
+
+                            <div className="articles">
+                                    <div className="row row-cols-2 g-lg-3 row-cols-lg-3" style={{paddingTop: "70px"}}>
+                                        {
+                                            sectionOne.map((one) => (
+                                                <div className="col" key={one.id}>
+                                                    <div className="" style={{backgroundImage: `url(${one.bgImage})`, width: "282px", height: "370px"}}>
+                                                        <div className="row p-4">
+                                                            <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row mt-4">
+                                                        <div className="col">
+                                                            <p className="card-labels-black" style={{fontSize: "15px", lineHeight: "0.01px"}}>{one.title}</p>
+                                                            <p className="card-labels-black"><a href="#" className="" style={{textDecoration: "none", lineHeight:"0.01px", fontSize: "13px", color: `${colors.grey}`}}>{one.brand}</a></p>
+
+                                                        </div>
+                                                        <div className="col mx-2 col-4 text-start"><a href="#"  style={{color: `${colors.black}`, textDecoration: "none", backgroundColor: `${colors.light}`, borderRadius: "8px", padding: "10px", width: "82.31px", height: "36.58px"}}><b>{one.price}</b></a></div>
+                                                    </div>
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                            </div>
                         
                     </div>
                 </div>

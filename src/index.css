@@ -56,6 +56,13 @@
 }
 
 
+:root
+{
+  --form-range-thumb-height:  20px;
+  --form-range-track-bg: #807D7E;
+  --form-range-thumb-bg: #807D7E
+}
+
 body {
   margin: 0px;
   font-family: 'Causten_500';
@@ -78,6 +85,20 @@ body {
   font-size: '14px';
   color: #807D7E;
 }
+
+.label-txt
+{
+  font-family: 'Causten_400';
+  font-size: '16px';
+  color: #8A8989;
+}
+
+.form-range
+{
+  --bs-range-track-color: var(var(--bs-range-track-color))
+}
+
+
 
 .notice { font-family: 'Causten_400'; color: #3C4242; line-height: 19.2px; font-size: 16px; }
 

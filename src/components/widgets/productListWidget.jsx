@@ -11,6 +11,8 @@ import WC10 from "../../assets/productList/WC10.png";
 import WC11 from "../../assets/productList/WC11.png";
 import WC12 from "../../assets/productList/WC12.png";
 
+import { colors } from "../tools/colors";
+
 
 const sectionOne =
 [
@@ -113,6 +115,119 @@ const sectionOne =
     
 ]
 
+
+const sectionOneFilter = 
+[
+    "Tops",
+    "Printed T-shirts", 
+    "Plain T-shirts", 
+    "Kurti", "Boxers", 
+    "Full sleeve T-shirts",
+    "Joggers",
+    "Payjamas",
+    "Jeans"
+]
+
+const sectionOneSize = 
+[
+    "XXS",
+    "XL",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XXL",
+    "3XL",
+    "4XL",
+]
+
+const sectionOneDress = 
+[
+    "Classic",
+    "Casual", 
+    "Business", 
+    "Sport", 
+    "Elegant",
+    "Joggers",
+    "Payjamas",
+    "Formal (evening)"
+]
+
+const sectionOneColor = 
+[
+    {
+        id: 1,
+        name: "Purple",
+        color: colors.filterPurple
+    },
+
+    {
+        id: 2,
+        name: "Black",
+        color: colors.filterBlack
+    },
+
+    {
+        id: 3,
+        name: "Red",
+        color: colors.filterRed
+    },
+
+    {
+        id: 4,
+        name: "Orange",
+        color: colors.filterOrange
+    },
+
+    {
+        id: 5,
+        name: "Navy",
+        color: colors.filterNavy
+    },
+
+    {
+        id: 6,
+        name: "White",
+        color: colors.filterWhite
+    },
+
+    {
+        id: 7,
+        name: "Broom",
+        color: colors.filterBroom
+    },
+    
+    {
+        id: 8,
+        name: "Green",
+        color: colors.filterGreen
+    },
+
+    {
+        id: 9,
+        name: "Yellow",
+        color: colors.filterYellow
+    },
+
+    {
+        id: 10,
+        name: "Grey",
+        color: colors.filterGrey
+    },
+
+    {
+        id: 11,
+        name: "Pink",
+        color: colors.filterPink
+    },
+
+    {
+        id: 12,
+        name: "Blue",
+        color: colors.filterBlue
+    }
+]
+
 const sectionThree = 
 [
     {
@@ -188,4 +303,4 @@ const sectionThree =
     },
 ]
 
-export {sectionOne, sectionThree}
+export {sectionOne, sectionThree, sectionOneFilter, sectionOneColor, sectionOneDress, sectionOneSize}
