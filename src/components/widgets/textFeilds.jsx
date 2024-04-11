@@ -16,5 +16,18 @@ const CheckBoxTextFeild = () =>
     return <input type="checkbox" className="checkBoxTextFeild"/>
 }
 
+const PrimaryTextFeild = ({label, placeholder, type}) =>
+{
+    return <div className="primaryText">
+    <div className="label">{label}</div>
+    <input type={type} className="primaryTextFeild form-control" placeholder={placeholder} />
+</div>
+}
 
-export {AuthTextFeilds, HeaderTextFeild, CheckBoxTextFeild} 
+const PaymentTextFeild = ({placeholder, type}) =>
+{
+    return <input type={type} className="paymentTextFeild form-control" placeholder={placeholder} />
+}
+
+
+export {AuthTextFeilds, HeaderTextFeild, CheckBoxTextFeild, PrimaryTextFeild, PaymentTextFeild} 

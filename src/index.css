@@ -125,6 +125,13 @@ body {
   color: white;
 }
 
+.btn-purple:hover
+{
+  padding: 10px 20px 10px 20px;
+  background-color: #a25cfd;
+  color: white;
+}
+
 
 .form-range
 {
@@ -663,6 +670,74 @@ input[type="checkbox"] {
   border-width: 1px 0px 0px 0px;
 }
 
+.paymentTextFeild
+{
+  height: 49px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3C4242;
+}
+
+.paymentTextFeild::placeholder
+{
+  font-family: 'Causten_400';
+  color: #807D7E;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.paymentTextFeild:focus
+{
+  outline: none;
+  box-shadow: 0 0 0 1px #8A8989;
+  height: 49px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3C4242;
+}
+
+.primaryTextFeild
+{
+  height: 49px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: #F6F6F6;
+  border-style: none;
+}
+
+.primaryTextFeild::placeholder
+{
+  font-family: 'Causten_400';
+  color: #807D7E;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.primaryTextFeild:focus
+{
+  outline: none;
+  box-shadow: 0 0 0 1px #8A8989;
+  height: 49px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: #F6F6F6;
+  /* border-style: solid; */
+}
+
+.primaryText .label
+{
+  font-family: 'Causten_500';
+  font-size: 16px;
+  padding-bottom: 10px;
+
+}
+
 .qantity
 {
   display: flex;
@@ -672,6 +747,28 @@ input[type="checkbox"] {
   background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
+}
+
+.box
+{
+  background-color: #F6F6F6;
+  border-radius: 12px;
+  padding: 38px 48px 39px 28px;
+}
+
+input[type="radio"]
+{
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+}
+
+input[type="radio"]:focus
+{
+  outline: none;
+  width: 20px;
+  height: 20px;
+  color: #333333;
 }
 
 @media (max-width: 767px)

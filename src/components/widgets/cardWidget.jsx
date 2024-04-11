@@ -30,7 +30,7 @@ const sectionTwo =
     },
 
     {
-        id: 2,
+        id: 3,
         bgImage: PD3,
         name: "Black Sweatshirt",
         color: "Black",
