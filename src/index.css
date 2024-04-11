@@ -2,9 +2,16 @@
 
 @font-face
 {
-  font-family: 'Causten_300';
+  font-family: 'Causten_200';
   src: url('../src//fonts/Causten/Causten\ Thin.ttf');
 }
+
+@font-face
+{
+  font-family: 'Causten_300';
+  src: url('../src//fonts/Causten/Causten\ Extra\ Light.ttf');
+}
+
 
 @font-face
 {
@@ -69,6 +76,7 @@ body {
 {
   font-family: 'Causten_400';
   font-size: '14px';
+  color: #807D7E;
 }
 
 .notice { font-family: 'Causten_400'; color: #3C4242; line-height: 19.2px; font-size: 16px; }
@@ -137,11 +145,28 @@ body {
 
 .thin-decs-white
 {
-  font-family: 'Causten_300';
+  font-family: 'Causten_200';
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1px;
   color: white;
+}
+
+
+.content-title
+
+{
+  font-family: 'Core_Sans_C';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2%;
+}
+.content-text
+{
+  font-family: 'Causten_300';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2%;
 }
 
 .authTextFeilds
@@ -374,6 +399,20 @@ input[type="checkbox"] {
   font-family: 'Core_Sans_C';
   font-size: 36px;
   color: #333333;
+}
+
+.small-title-link
+{
+  font-family: 'Core_Sans_C';
+  font-size: 22px;
+  color: #333333;
+}
+
+.small-title-link:hover
+{
+  font-family: 'Core_Sans_C';
+  font-size: 22px;
+  color: #8A33FD;
 }
 
 .footerTitle 

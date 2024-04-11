@@ -8,6 +8,7 @@ import CheckEmail from "./components/views/checkEmail";
 import Verification from "./components/views/verification";
 import CreatePassword from "./components/views/createPassword";
 import Footer from "./components/widgets/footer";
+import ProductList from "./components/views/productList";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
          <div className="activity-pages">
             <Routes>
               <Route path="/" element={<Home />}/>
+              <Route path="/product-list" element={<ProductList />}/>
             </Routes>
          </div>
 
