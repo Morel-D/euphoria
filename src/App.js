@@ -9,6 +9,7 @@ import Verification from "./components/views/verification";
 import CreatePassword from "./components/views/createPassword";
 import Footer from "./components/widgets/footer";
 import ProductList from "./components/views/productList";
+import CartPage from "./components/views/cartPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/product-list" element={<ProductList />}/>
+              <Route path="/cart-page" element={<CartPage />}/>
             </Routes>
          </div>
 
