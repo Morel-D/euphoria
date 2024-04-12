@@ -12,6 +12,11 @@ import SP6 from "../../assets/productDeatils/SP6.png";
 import SP7 from "../../assets/productDeatils/SP7.png";
 import SP8 from "../../assets/productDeatils/SP8.png";
 
+import D1 from "../../assets/productDeatils/D1.png";
+import D2 from "../../assets/productDeatils/D2.png";
+import D3 from "../../assets/productDeatils/D3.png";
+
+
 
 
 const sectionOne = 
@@ -42,6 +47,7 @@ const sectionOne =
 
 ]
 
+const sectionOneCol = [D1, D2, D3];
 
 const sectionThree = 
 [
@@ -111,4 +117,4 @@ const sectionThree =
     },
 ]
 
-export {sectionOne, sectionThree}
+export {sectionOne, sectionThree, sectionOneCol}
