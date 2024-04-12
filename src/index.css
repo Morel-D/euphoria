@@ -756,6 +756,40 @@ input[type="checkbox"] {
   padding: 38px 48px 39px 28px;
 }
 
+.box-borderless
+{
+  background-color: #F6F6F6;
+  border-radius: 12px;
+}
+
+.small-box
+{
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  /* padding-left: px; */
+  /* padding: 5px; */
+}
+
+a label{
+  cursor: pointer;
+}
+
+a label:hover{
+  cursor: pointer;
+  color: #8A33FD;
+}
+
+.small-line
+{
+  width: 43px;
+  background-color: #000000;
+  height: 1px;
+  border-radius: 1.4px;
+}
+
 input[type="radio"]
 {
   width: 20px;

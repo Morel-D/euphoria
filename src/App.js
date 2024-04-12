@@ -11,6 +11,7 @@ import Footer from "./components/widgets/footer";
 import ProductList from "./components/views/productList";
 import CartPage from "./components/views/cartPage";
 import Checkout from "./components/views/checkout";
+import ProductDetails from "./components/views/productDetails";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path="/product-list" element={<ProductList />}/>
               <Route path="/cart-page" element={<CartPage />}/>
               <Route path="checkout" element = {<Checkout />} />
+              <Route path ="/product-details" element={<ProductDetails />} />
             </Routes>
          </div>
 
