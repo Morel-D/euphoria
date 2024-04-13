@@ -13,6 +13,7 @@ import CartPage from "./components/views/cartPage";
 import Checkout from "./components/views/checkout";
 import ProductDetails from "./components/views/productDetails";
 import Contact from "./components/views/Contact";
+import Address from "./components/views/address";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="checkout" element = {<Checkout />} />
               <Route path ="/product-details" element={<ProductDetails />} />
               <Route path ="/contact-details" element={<Contact />} />
+              <Route path = "/add-address" element={<Address />} />
             </Routes>
          </div>
 

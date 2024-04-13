@@ -138,6 +138,21 @@ body {
   color: white;
 }
 
+.btn-grey
+{
+  /* width: 141px; */
+  padding: 10px 20px 10px 20px;
+  background-color: #F6F6F6;
+  color: #807D7E;
+}
+
+.btn-grey:hover
+{
+  padding: 10px 20px 10px 20px;
+  background-color: #dfdfdf;
+  color: #807D7E;
+}
+
 
 .form-range
 {
@@ -749,6 +764,34 @@ input[type="checkbox"] {
   font-size: 16px;
   padding-bottom: 10px;
 
+}
+
+.textAreaFeild
+{
+  height: 149px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: #F6F6F6;
+  border-style: none;
+}
+
+.textAreaFeild::placeholder
+{
+  font-family: 'Causten_400';
+  color: #807D7E;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.textAreaFeild:focus
+{
+  outline: none;
+  box-shadow: 0 0 0 1px #8A8989;
+  height: 149px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: #F6F6F6;
+  /* border-style: solid; */
 }
 
 .qantity

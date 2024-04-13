@@ -24,10 +24,18 @@ const PrimaryTextFeild = ({label, placeholder, type}) =>
 </div>
 }
 
+const TextAreaFeild = ({label, placeholder, type}) =>
+{
+    return <div className="primaryText">
+    <div className="label">{label}</div>
+    <textarea type={type} className="textAreaFeild form-control" placeholder={placeholder} />
+</div>
+}
+
 const PaymentTextFeild = ({placeholder, type}) =>
 {
     return <input type={type} className="paymentTextFeild form-control" placeholder={placeholder} />
 }
 
 
-export {AuthTextFeilds, HeaderTextFeild, CheckBoxTextFeild, PrimaryTextFeild, PaymentTextFeild} 
+export {AuthTextFeilds, HeaderTextFeild, CheckBoxTextFeild, PrimaryTextFeild, PaymentTextFeild, TextAreaFeild} 
