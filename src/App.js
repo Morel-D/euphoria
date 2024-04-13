@@ -12,6 +12,7 @@ import ProductList from "./components/views/productList";
 import CartPage from "./components/views/cartPage";
 import Checkout from "./components/views/checkout";
 import ProductDetails from "./components/views/productDetails";
+import Contact from "./components/views/Contact";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/cart-page" element={<CartPage />}/>
               <Route path="checkout" element = {<Checkout />} />
               <Route path ="/product-details" element={<ProductDetails />} />
+              <Route path ="/contact-details" element={<Contact />} />
             </Routes>
          </div>
 
