@@ -64,7 +64,7 @@ const firstSection =
         label: "UPTO 50% OFF",
         link: "Explore Items",
         bgSize: "98%",
-        bottom: "0px"
+        bottom: "0px",
     },
 
     {
@@ -75,7 +75,8 @@ const firstSection =
         label: "UPTO 50% OFF",
         link: "Explore Items",
         bgSize: "100%",
-        bottom: "5px"
+        bottom: "5px",
+
     }
     
 ]

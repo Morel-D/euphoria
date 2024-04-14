@@ -161,7 +161,7 @@ const Checkout = () => {
                     </div>
 
                     <div className="my-5" style={{paddingBottom: "50px"}}>
-                        <button className="btn btn-purple p-3">Pay Now</button>
+                        <a href="/confirm" className="btn btn-purple p-3">Pay Now</a>
                     </div>
                 </div>
                 <div className="col col-5" style={{paddingTop: "100px"}}>

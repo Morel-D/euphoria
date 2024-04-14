@@ -960,7 +960,24 @@ input[type="radio"]:focus
   border-color: #3C4242;
 }
 
+.details
+{
+  position: absolute;
+  top: 555px;
+  left: 822px;
+  height: 100px;
+  width: 200px;
+  background-color: white;
 
+}
+
+.payment-img
+{
+  margin-left: 150px;
+  background-image: url("../src/assets/order-confirmed.png");
+  width: 967px;
+  height: 726px;
+}
 
 @media (max-width: 767px)
 {

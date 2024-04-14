@@ -5,6 +5,9 @@ import { OutLineBlackBtn, OutLineWhiteBtn, SpecialBlackBtn, WhiteBtn } from "../
 import leftArrow from "../../assets/logo/LA.png";
 import rightArrow from "../../assets/logo/RA.png";
 import carousel from "../../assets/logo/carrousel.png";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 
 import leftGreyArrow from "../../assets/logo/left.png";
 import rightGreyArrow from "../../assets/logo/right.png";
@@ -31,12 +34,18 @@ import ST2 from "../../assets/logo/start2.png";
 import ST3 from "../../assets/logo/Star3.png";
 
 import pag from "../../assets/logo/pagination.png";
+import { useEffect } from "react";
 
 
 
 
 
 const Home = () => {
+
+    useEffect(() =>{
+        Aos.init({duration: 2000})
+    })
+
     return ( 
         
         <section className="container-fluid home-section">
@@ -44,9 +53,9 @@ const Home = () => {
             <div className="row" style={{backgroundImage: `url(${homeBanner.bgImage})`, paddingTop: "129px", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                     <div className="col col-1 d-flex align-items-center"><a href="#"><img src={leftArrow} className="img-fluid mx-3" /></a></div>
                     <div className="col">
-                    <p className="txt-white">{homeBanner.firstPath}</p>
-                <h1 className="intro-title py-4">{homeBanner.title}</h1>
-                <p className="txt-white mb-5">{homeBanner.secondPath}</p>
+                    <p className="txt-white" data-aos="fade-right">{homeBanner.firstPath}</p>
+                <h1 className="intro-title py-4" data-aos="fade-right">{homeBanner.title}</h1>
+                <p className="txt-white mb-5" data-aos="fade-right">{homeBanner.secondPath}</p>
                 <WhiteBtn children={homeBanner.btnTitle} />
                     </div>
                     <div className="col"></div>
@@ -59,7 +68,7 @@ const Home = () => {
                     <div className="row">
                         {firstSection.map((first) => (
                          <div className="col py-2" key={first.id}>
-                            <div className="cards py-5" style={{backgroundImage: `url(${first.bgImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundSize: `${first.bgSize}`, position: "relative", bottom: `${first.bottom}`, height: "355.84px", width: "604.93px", paddingLeft: "30px" }}>
+                            <div className="cards py-5" data-aos="fade-up" style={{backgroundImage: `url(${first.bgImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundSize: `${first.bgSize}`, position: "relative", bottom: `${first.bottom}`, height: "355.84px", width: "604.93px", paddingLeft: "30px" }}>
                                 <div className="row">
                                     <div className="col col-6">
                                     <p className="card-small-title mt-3">{first.smallTitle}</p>
@@ -84,7 +93,7 @@ const Home = () => {
                         {
                             secondSection.map((second) =>
                         (
-                            <div className="col" key={second.id}>
+                            <div className="col" data-aos="fade-up" key={second.id}>
                                 <img src={second.bgImage} className="img-fluid" />
                                 <div style={{paddingTop: "32px"}}><p style={{color: `${colors.black}`}}>{second.title}</p></div>
                             </div>
@@ -97,7 +106,7 @@ const Home = () => {
                 <section className="third-section"  style={{paddingTop: "100px"}}>
                     <HighLine children="Big Saving Zone" />
 
-                    <div className="row" style={{paddingTop: "70px"}}>
+                    <div className="row" data-aos="fade-up" style={{paddingTop: "70px"}}>
                             {
                                 thirdSectionFirstPart.map((thirdFirstPart) =>
                             (
@@ -128,7 +137,7 @@ const Home = () => {
                             }
                     </div>
 
-                    <div className="row mt-3">
+                    <div className="row mt-3" data-aos="fade-up">
                         {
                             thirdSectionSecondPart.map((thirdSecond) =>
                         (
@@ -159,8 +168,8 @@ const Home = () => {
                     <div className="row">
                         <div className="col"  style={{backgroundImage: `url(${SIM1})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh", width:"614px", padding: "150px 40px 174px 40px"}}>
                             <div className="mx-4">
-                                <h6 className="intro-title" style={{fontSize: "34px", lineHeight: "50px"}}>WE MADE YOUR EVERYDAY FASHION BETTER!</h6>
-                                <p className="thin-decs-white py-4 mx-2">In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                                <h6 className="intro-title" data-aos="fade-up" style={{fontSize: "34px", lineHeight: "50px"}}>WE MADE YOUR EVERYDAY FASHION BETTER!</h6>
+                                <p className="thin-decs-white py-4 mx-2" data-aos="fade-up">In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
                                 <div className="">
                                     <WhiteBtn children="Shop Now" />
                                 </div>
@@ -174,7 +183,7 @@ const Home = () => {
                 <section className="fifth-section" style={{paddingTop: "100px"}}>
                     <HighLine children="Categories For Men" />
 
-                    <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
+                    <div className="row row-cols-2 row-cols-lg-4 g-lg-3" data-aos="fade-up" style={{paddingTop: "70px"}}>
                         {
                             fifthSection.map((fifth) => (
                                 <div className="col" key={fifth.id}>
@@ -200,7 +209,7 @@ const Home = () => {
                     <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
                         {
                             sixthSection.map((sixth) => (
-                                <div className="col" key={sixth.id}>
+                                <div className="col" data-aos="fade-up" key={sixth.id}>
                                     <img src={sixth.bgImage} className="img-fluid" />
                                     <div className="row mt-4">
                                         <div className="col col-7">
@@ -237,7 +246,7 @@ const Home = () => {
                     <div className="row row-cols-2 row-cols-lg-4 g-lg-3" style={{paddingTop: "70px"}}>
                         {
                             eighthSection.map((eighth) => (
-                                <div className="col" key={eighth.id}>
+                                <div className="col" data-aos="fade-up" key={eighth.id}>
                                     <div className="" style={{backgroundImage: `url(${eighth.bgImage})`, width: "282px", height: "370px"}}>
                                         <div className="row p-4">
                                             <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
@@ -262,7 +271,7 @@ const Home = () => {
                     <div className="row " style={{paddingTop: "70px"}}>
                         {
                             nineSection.map((nine) => (
-                                <div className="col" key={nine.id}>
+                                <div className="col" data-aos="fade-up" key={nine.id}>
                                     <div className="card p-4" style={{ borderWidth: "2px", width: "396px", height: "392px"}}>
                                         <div className="row py-4">
                                             <div className="col text-start"><a href="#"><img src={nine.profile} className="img-fluid" /></a></div>

@@ -14,6 +14,7 @@ import Checkout from "./components/views/checkout";
 import ProductDetails from "./components/views/productDetails";
 import Contact from "./components/views/Contact";
 import Address from "./components/views/address";
+import Confirm from "./components/views/confirm";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
               <Route path ="/product-details" element={<ProductDetails />} />
               <Route path ="/personal-info" element={<Contact />} />
               <Route path = "/add-address" element={<Address />} />
+              <Route path = "/confirm" element={<Confirm />} />
             </Routes>
          </div>
 
