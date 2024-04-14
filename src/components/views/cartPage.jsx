@@ -12,7 +12,7 @@ const CartPage = () => {
                     <div className="row">
                         <div className="col "><label className="label-txt" style={{fontSize: "18px"}}><a className="link-tag" href="/">Home</a> <img src={arrowLeft} className="mx-4 img-fluid" /><label className="label">Add To Cart</label></label></div>
                     </div>
-                    <label className="small-txt mt-4" style={{fontSize: '14px'}}>Please fill in the fields below and click place order to complete your purchase! <br /> Already registered? <a className="link-tag" href="/" style={{color: `${colors.primary}`, fontWeight: "bold", textDecoration: "none"}}>Please login here</a></label>
+                    <label className="small-txt mt-4" style={{fontSize: '14px'}}>Please fill in the fields below and click place order to complete your purchase! <br /> Already registered? <a className="link-tag" href="/sign-up" style={{color: `${colors.primary}`, fontWeight: "bold", textDecoration: "none"}}> Please login here</a></label>
                 </div>
             </section>
             <section class=" section-two">

@@ -1,12 +1,12 @@
-const PrimaryBtn = ({children}) =>
+const PrimaryBtn = ({children, href}) =>
 {
-    return <button className="btn primaryBtn">{children}</button>
+    return <a className="btn primaryBtn" href={href}>{children}</a>
     
 }
 
-const SecondaryBtn = ({children}) =>
+const SecondaryBtn = ({children, href}) =>
 {
-    return <button className="btn SecondaryBtn">{children}</button>
+    return <a className="btn SecondaryBtn" href={href}>{children}</a>
     
 }
 

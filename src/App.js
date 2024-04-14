@@ -47,7 +47,13 @@ function App() {
            </Routes>
          </div>
       </div>
-      <div className="footer">
+      <div className={
+        endpoint === "/sign-in" ||
+        endpoint === "/sign-up" ||
+        endpoint === "/reset-password" ||
+        endpoint === "/check-email" ||
+        endpoint === "/verification" ||
+        endpoint === "/create-password" ? "d-none" : "footer" }>
         <Footer />
       </div>
     </div>

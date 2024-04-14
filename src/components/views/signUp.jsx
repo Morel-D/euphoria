@@ -19,7 +19,7 @@ const SignUp = () => {
             <div className="row">
                 <div class="col col-md-6 d-none d-lg-flex bg-image" style={{backgroundImage: `url(${SUImg})`}}></div>
                 <div className="col">
-                    <div className="container px-5">
+                    <div className="container px-1">
                         <div className="mt-5">
                             <h1 className="title">Sign Up</h1>
                             <p>Sign up for free to access to in any of our products </p>
@@ -50,8 +50,8 @@ const SignUp = () => {
                                     <div className="col"><p style={{fontSize: "18px"}}>Subscribe to our monthly newsletter</p></div>
                                 </div>
                             </div>
-                            <div className="mt-4" style={{paddingBottom: "82%"}}>
-                                <PrimaryBtn children="Sign Up" />
+                            <div className="mt-4" style={{paddingBottom: "20%"}}>
+                                <PrimaryBtn children="Sign Up" href="/" />
                                 <p className="notice mt-2">Already have an  account? <a href="/sign-in" style={{color: "#3C4242"}}>Sign In</a></p>
                             </div>
                         </div>

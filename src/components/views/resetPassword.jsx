@@ -21,8 +21,8 @@ const RestePassword = () => {
                                 <AuthTextFeilds label="Email Address" type="email" placeholder="designer@gmail.com"/>
                                 <p className="txt-danger mt-2">We can not find your email.</p>
                             </div>
-                            <div className="mt-4" style={{paddingBottom: "82vh"}}>
-                                <PrimaryBtn children="Sign Up" />
+                            <div className="mt-4" style={{paddingBottom: "82%"}}>
+                                <PrimaryBtn children="Sign Up" href="/check-email" />
                                 <p className="notice mt-2">Back to <a href="/sign-in" style={{color: "#3C4242"}}>Log in</a></p>
                             </div>
                         </div>
