@@ -80,6 +80,12 @@ body {
   background-color: white;
 }
 
+.link-tag
+{
+  text-decoration: none;
+  color: #807D7E;
+}
+
 /* .home-section
 {
   padding: 0px;
@@ -131,9 +137,22 @@ body {
   color: white;
 }
 
+
 .btn-purple:hover
 {
   padding: 10px 20px 10px 20px;
+  background-color: #a25cfd;
+  color: white;
+}
+
+.btn-purple-header
+{
+  background-color: #8A33FD;
+  color: white;
+}
+
+.btn-purple-header:hover
+{
   background-color: #a25cfd;
   color: white;
 }
@@ -187,7 +206,7 @@ body {
   border-style: solid; 
   border-width: 0px 0px 1px 0px; 
   border-color: #BEBCBD; 
-  padding: 34px 100px 31px 100px; 
+  padding: 31px 100px 32px 100px; 
 }
 
 .bg-image { background-repeat: no-repeat; }
@@ -318,19 +337,60 @@ body {
 
 }
 
+.icon-prefix
+{
+  position: absolute;
+  margin-left: 10px;
+  height: 25px;
+  display: flex;
+  align-items: center; 
+}
+
 .headerTextFeilds
 {
   width: 184px;
   height: 46px;
   background-color: #F6F6F6;
   border-style: solid;
-  border-radius: 8px;
+  border-radius: 10px;
   border-width: 1px;
   border-color: transparent;
-  padding-left: 20px;
+  padding-left: 40px;
   color: #807D7E;
 }
 
+.headerTextFeilds::placeholder
+{
+  font-family: 'Causten_400';
+  /* padding-left: 20px; */
+  /* padding-top: ; */
+}
+
+a:hover
+{
+  color: #8A33FD;
+}
+
+.header-link
+{
+  font-family: 'Causten_400';
+  text-decoration: none;
+  color: #807D7E;
+  font-size: 22px;
+}
+
+.header-link-active
+{
+  font-family: 'Causten_500';
+  text-decoration: none;
+  color: #3C4242;
+  font-size: 22px;
+}
+
+.btn-header
+{
+  background-color: #F6F6F6;
+}
 
 .primaryBtn
 {
@@ -399,8 +459,7 @@ body {
   background-color: white;
   width: 250px;
   height: 65px;
-  padding: 16px 70px 16px 70px;
-  gap: 12px;
+  gap: 12px; 
 }
 
 .whiteBtn:hover

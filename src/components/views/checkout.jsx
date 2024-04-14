@@ -15,7 +15,7 @@ const Checkout = () => {
         <section className="container">
             <div className="row mt-5">
                 <div className="col">
-                    <div className=""><label className="label-txt" style={{fontSize: "18px"}}>Home <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Add To Cart</label></label></div>
+                    <div className=""><label className="label-txt" style={{fontSize: "18px"}}><a className="link-tag" href="/">Home</a> <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Add To Cart</label></label></div>
 
                     <div className="mt-4">
                         <HighLine children="Check out" />

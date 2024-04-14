@@ -14,6 +14,7 @@ import Product from "../../assets/productDeatils/product.png";
 import D2 from "../../assets/productDeatils/D2.png";
 import BAD from "../../assets/logo/whiteArrowUp.png";
 import WAU from "../../assets/logo/blackArrowDown.png";
+import { Link } from "react-router-dom";
 
 
 const ProductDetails = () => {
@@ -59,7 +60,7 @@ const ProductDetails = () => {
                     </div>
                     <div className="col mt-5">
                         <div  style={{paddingLeft: "76px"}}>
-                            <div className=""><label className="label-txt" style={{fontSize: "18px"}}>Shop <img src={arrowLeft} className="mx-2 img-fluid" /> Women <img src={arrowLeft} className="mx-2 img-fluid" /> Top</label></div>
+                            <div className=""><label className="label-txt" style={{fontSize: "18px"}}><a href="/" className="link-tag">Shop</a> <img src={arrowLeft} className="mx-2 img-fluid" /> <a href="/women" className="link-tag">Women</a> <img src={arrowLeft} className="mx-2 img-fluid" /> Top</label></div>
                             <div className="mt-4">
                                 <h6 className="title mt-2" style={{fontSize: "32px", lineHeight: "47.6px"}}>Raven Hoodie With <br /> Black colored Design</h6>
                             </div>
@@ -84,19 +85,19 @@ const ProductDetails = () => {
 
                             <div className="row mt-2">
                                 <div className="col col-1">
-                                    <div className="" style={{backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>L</div>
+                                    <div className="" style={{cursor: "pointer", backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>L</div>
                                 </div>
                                 <div className="col col-1">
-                                    <div className="" style={{backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>S</div>
+                                    <div className="" style={{cursor: "pointer", backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>S</div>
                                 </div>
                                 <div className="col col-1">
-                                <div className="" style={{backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>M</div>
+                                <div className="" style={{cursor: "pointer", backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>M</div>
                                 </div>
                                 <div className="col col-1">
-                                    <div className="" style={{backgroundColor: `${colors.black}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px", color: `${colors.white}`}}>L</div>
+                                    <div className="" style={{cursor: "pointer", backgroundColor: `${colors.black}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px", color: `${colors.white}`}}>L</div>
                                 </div>
                                 <div className="col col-1">
-                                    <div className="" style={{backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>XL</div>
+                                    <div className="" style={{cursor: "pointer", backgroundColor: "transparent", borderStyle: "solid", borderColor: `${colors.accentGrey}`, textAlign: "center", paddingTop: "8px", borderWidth:"2px", width: "38px", height: "38px", borderRadius: "12px"}}>XL</div>
                                 </div>
                             </div>
 
@@ -104,16 +105,16 @@ const ProductDetails = () => {
                                 <label className="label"><b>Colours Available </b></label>
                                 <div className="row">
                                     <div className="col col-1" style={{width: "40px"}}>
-                                        <div className="" style={{backgroundColor: `${colors.black}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
+                                        <div className="" style={{cursor: "pointer", backgroundColor: `${colors.black}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
                                     </div>
                                     <div className="col col-1" style={{width: "40px"}}>
-                                        <div className="" style={{backgroundColor: `${colors.filterYellow}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
+                                        <div className="" style={{cursor: "pointer", backgroundColor: `${colors.filterYellow}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
                                     </div>
                                     <div className="col col-1" style={{width: "40px"}}>
-                                        <div className="" style={{backgroundColor: `${colors.filterPink}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
+                                        <div className="" style={{cursor: "pointer", backgroundColor: `${colors.filterPink}`, borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
                                     </div>
                                     <div className="col col-1">
-                                        <div className="" style={{backgroundColor: "#9C1F35", borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
+                                        <div className="" style={{cursor: "pointer", backgroundColor: "#9C1F35", borderStyle: "none", width: "22px", height: "22px", borderRadius: "150px"}}></div>
                                     </div>
                                 </div>
                             </div>

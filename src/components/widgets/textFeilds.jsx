@@ -6,9 +6,14 @@ const AuthTextFeilds = ({type, label, placeholder}) =>
     </div>
 }
 
-const HeaderTextFeild = ({type}) =>
+const HeaderTextFeild = ({type, img, placeholder}) =>
 {
-    return <input type={type} className="headerTextFeilds" />
+    return <div className="input-group">
+                <span className="icon-prefix mt-2">
+                    <img src={img} className="" />
+                </span>
+                <input type={type} className="headerTextFeilds" placeholder={placeholder}/>
+            </div>
 }
 
 const CheckBoxTextFeild = () =>

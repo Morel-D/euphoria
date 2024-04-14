@@ -11,7 +11,7 @@ const Contact = () => {
     return ( 
         <section className="contact-section py-5">
             <section className="container divided-section">
-                <div className=""><label className="label-txt" style={{fontSize: "18px"}}>Home <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Personal Info</label></label></div>
+                <div className=""><label className="label-txt" style={{fontSize: "18px"}}><a href="/" className="link-tag">Home</a> <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Personal Info</label></label></div>
                 <div className="row mt-5">
                     <div className="col col-4">
                         <HighLine children="Hello Jhanvi" />
@@ -58,7 +58,10 @@ const Contact = () => {
                         </section>
 
                         <section className="section-two">
-                            <h6 className="title mt-3" style={{fontSize: "22px"}}>Address</h6>
+                            <div className="row mt-3">
+                                <div className="col"><h6 className="title" style={{fontSize: "22px"}}>Address</h6></div>
+                                <div className="col text-end"><a href="/add-address" className="label"  style={{textDecoration: "none"}}><b>add new</b></a></div>
+                            </div>
 
                             <div className="info py-5">
                                <div className="row row-cols-2 row-cols-lg-2 g-lg-3">

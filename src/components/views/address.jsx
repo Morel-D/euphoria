@@ -8,7 +8,7 @@ const Address = () => {
     return ( 
         <section className="address py-5">
             <section className="container divided-section">
-                    <div className=""><label className="label-txt" style={{fontSize: "18px"}}>Home <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Delivery Address</label></label></div>
+                    <div className=""><label className="label-txt" style={{fontSize: "18px"}}><a href="/" className="link-tag">Home</a> <img src={arrowLeft} className="mx-2 img-fluid" /> My Account <img src={arrowLeft} className="mx-2 img-fluid" /> <label className="label">Delivery Addressùm</label></label></div>
                 <div className="row mt-5">
                     <div className="col col-4">
                         <HighLine children="Hello Jhanvi" />

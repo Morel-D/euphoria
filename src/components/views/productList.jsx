@@ -7,6 +7,7 @@ import filter from "../../assets/logo/filter.png"
 import greyLeftArrow from "../../assets/logo/arrowLeft.png"
 import greyUpArrow from "../../assets/logo/arrowUp.png"
 import blackUpArrow from "../../assets/logo/blackUpArrow.png"
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
     return ( 
@@ -140,11 +141,13 @@ const ProductList = () => {
                                         {
                                             sectionOne.map((one) => (
                                                 <div className="col" key={one.id}>
-                                                    <div className="" style={{backgroundImage: `url(${one.bgImage})`, width: "282px", height: "370px"}}>
-                                                        <div className="row p-4">
-                                                            <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
+                                                    <Link to={one.id === 1 ? "/product-details" : "#"}>
+                                                        <div className="" style={{backgroundImage: `url(${one.bgImage})`, width: "282px", height: "370px"}}>
+                                                            <div className="row p-4">
+                                                                <div className="col text-end"><a href="#"><img src={Heart} className="img-fluid" /></a></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
                                                     <div className="row mt-4">
                                                         <div className="col">
                                                             <p className="card-labels-black" style={{fontSize: "15px", lineHeight: "0.01px"}}>{one.title}</p>

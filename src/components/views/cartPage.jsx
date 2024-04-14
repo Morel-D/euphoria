@@ -10,9 +10,9 @@ const CartPage = () => {
             <section className="section-one container-fluid py-5 mx-5 px-5">
                 <div className="path">
                     <div className="row">
-                        <div className="col "><label className="label-txt" style={{fontSize: "18px"}}>Home <img src={arrowLeft} className="mx-4 img-fluid" /><label className="label">Add To Cart</label></label></div>
+                        <div className="col "><label className="label-txt" style={{fontSize: "18px"}}><a className="link-tag" href="/">Home</a> <img src={arrowLeft} className="mx-4 img-fluid" /><label className="label">Add To Cart</label></label></div>
                     </div>
-                    <label className="small-txt mt-4" style={{fontSize: '14px'}}>Please fill in the fields below and click place order to complete your purchase! <br /> Already registered? <a href="#" style={{color: `${colors.primary}`, fontWeight: "bold", textDecoration: "none"}}>Please login here</a></label>
+                    <label className="small-txt mt-4" style={{fontSize: '14px'}}>Please fill in the fields below and click place order to complete your purchase! <br /> Already registered? <a className="link-tag" href="/" style={{color: `${colors.primary}`, fontWeight: "bold", textDecoration: "none"}}>Please login here</a></label>
                 </div>
             </section>
             <section class=" section-two">
@@ -103,7 +103,7 @@ const CartPage = () => {
                                     </div>
                                     <hr />
                                     <div className="mt-5">
-                                        <button className="btn btn-purple">Proceed To Checkout</button>
+                                        <a href="/checkout" className="btn btn-purple">Proceed To Checkout</a>
                                     </div>
                                 </div>
                             </div>

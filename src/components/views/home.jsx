@@ -42,7 +42,7 @@ const Home = () => {
         <section className="container-fluid home-section">
 
             <div className="row" style={{backgroundImage: `url(${homeBanner.bgImage})`, paddingTop: "129px", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                    <div className="col col-1 d-flex align-items-center"><a href="#"><img src={leftArrow} className="img-fluid" /></a></div>
+                    <div className="col col-1 d-flex align-items-center"><a href="#"><img src={leftArrow} className="img-fluid mx-3" /></a></div>
                     <div className="col">
                     <p className="txt-white">{homeBanner.firstPath}</p>
                 <h1 className="intro-title py-4">{homeBanner.title}</h1>
@@ -50,7 +50,7 @@ const Home = () => {
                 <WhiteBtn children={homeBanner.btnTitle} />
                     </div>
                     <div className="col"></div>
-                    <div className="col d-flex align-items-center justify-content-end"><a href="#"><img src={rightArrow} className="img-fluid" /></a></div>
+                    <div className="col d-flex align-items-center justify-content-end"><a href="#"><img src={rightArrow} className="img-fluid mx-3" /></a></div>
 
                     <div className="text-center" style={{paddingTop: "73px", paddingBottom: "60px"}}><a href=""> <img src={carousel} className="img-fluid" /></a></div>
             </div>         

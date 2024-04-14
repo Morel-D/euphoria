@@ -16,6 +16,9 @@ import Contact from "./components/views/Contact";
 import Address from "./components/views/address";
 
 function App() {
+
+  const endpoint = window.location.pathname;
+
   return (
     <BrowserRouter>
     <div className=" app">
@@ -24,11 +27,11 @@ function App() {
          <div className="activity-pages">
             <Routes>
               <Route path="/" element={<Home />}/>
-              <Route path="/product-list" element={<ProductList />}/>
-              <Route path="/cart-page" element={<CartPage />}/>
+              <Route path="/women" element={<ProductList />}/>
+              <Route path="/add-to-cart" element={<CartPage />}/>
               <Route path="checkout" element = {<Checkout />} />
               <Route path ="/product-details" element={<ProductDetails />} />
-              <Route path ="/contact-details" element={<Contact />} />
+              <Route path ="/personal-info" element={<Contact />} />
               <Route path = "/add-address" element={<Address />} />
             </Routes>
          </div>
